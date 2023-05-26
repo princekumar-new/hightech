@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+#my-navigation{
+    background: none;
+    border: none;
+    padding: 2.5rem  1rem;
+    background-color: rgb(61, 60, 60);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+#logo{
+    font-size:2rem;
+    color: #fff;
+    padding-left: 3rem;
+}
+.navbar-right{
+    font-size: 1.7rem;
+}
+#my-navigation ul li a{
+    color: #fff;
+    padding-right: 3rem;
+}
+.full-width{
+    width: 100%;
+    height: 620px;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.banner{
+    width:40%;
+    margin-top: 3rem;
+}
+.banner h1{
+    font-size: 9rem;
+    font-weight: 700;
+}
+.banner p{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    margin: 3rem 0;
+}
+.button{
+    border: 0;
+    width: 200px;
+    padding: 2rem 0;
+    color: black;
+    font-size: 1.7rem;
+}
+
