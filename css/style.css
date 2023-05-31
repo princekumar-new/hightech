@@ -6,6 +6,20 @@ body{
 html{
     font-size: 10px;
 }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* full-width start here*/
 #my-navigation{
     background: none;
     border: none;
@@ -16,7 +30,7 @@ html{
     margin-bottom: 0;
 }
 #logo{
-    font-size:2rem;
+    font-size:3rem;
     color: #fff;
     padding-left: 3rem;
 }
@@ -26,21 +40,24 @@ html{
 #my-navigation ul li a{
     color: #fff;
     padding-right: 3rem;
+    font-size: 2rem;
 }
 .full-width{
     width: 100%;
-    height: 620px;
     background-image: url(../images/banner.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
+    padding-bottom: 5rem ;
 }
+
 .banner{
-    width:40%;
-    margin-top: 3rem;
+    width:140%;
+    padding: 3rem 0 ;
+
 }
 .banner h1{
-    font-size: 9rem;
+    font-size: 10rem;
     font-weight: 700;
 }
 .banner p{
@@ -54,5 +71,475 @@ html{
     padding: 2rem 0;
     color: black;
     font-size: 1.7rem;
+}
+.button:hover{
+    background-color: black;
+    color: #fff;
+    transition-duration: 2s;
+}
+.banner .carousel-indicators{
+    margin: 0 0;
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+    text-align: left;
+}
+/* full-width ends here*/
+
+/* what we do starts here*/
+
+.what{
+   padding: 7rem 0;
+}
+.what h2{
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+}
+h2 hr{
+    width: 2rem;
+    color: black;
+
+}
+
+.boxes{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+
+.first {
+    width: 30%;
+    border: 1px solid black;
+    padding: 4rem 3rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.first h4{
+    padding-top: 1.4rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.first p{
+    font-size: 1.7rem;
+    padding: 2rem 0;
+    line-height: 2.5rem;
+}
+
+
+.fbutton{
+    width: 130px;
+    padding: 1rem 1rem;
+    background-color: rgb(33, 31, 31);
+    color: #fff;
+    border: 0;
+    font-size: 1.6rem;
+}
+
+/* what we do ends here*/
+
+
+
+/* about starts here*/
+
+.full-banner {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/about_bg.jpg);
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+.info{
+    margin-top: 7rem;
+}
+.info h2{
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+.info p{
+    font-size: 2rem ;
+    font-weight: 700;
+}
+
+
+/* about ends here*/
+
+/*portfolio starts here*/
+
+.port1{
+    width: 47%;
+    height:50vh;
+    background-image: url(../images/prot1.png);
+}
+
+.port2{
+    width: 47%;
+    height:50vh;
+    background-image: url(../images/prot2.png);
+}
+
+.port3{
+    width: 47%;
+    height:50vh;
+    background-image: url(../images/prot3.png);
+    margin-top: 4rem;
+}
+
+.port4{
+    width: 47%;
+    height:50vh;
+    background-image: url(../images/prot4.png);
+    margin-top: 4rem;
+
+}
+
+.all-port{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10rem ;
+}
+.newport h2{
+    text-align: left;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.caption{
+    background-color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+ }
+ .newport button{
+    text-align: center;
+    margin-top:5rem ;
+}
+ .bbutton{
+    width: 200px;
+    padding: 1.8rem 0;
+    border: 0;
+    font-size: 1.5rem;
+    background-color: black;
+    color: #fff;
+ }
+/*portfolio ends here*/
+
+
+/*choose starts here*/
+
+.choose{
+    background-color: black;
+    padding: 6rem 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+
+}
+.choose h2{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.achive{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 3rem;
+  
+}
+.abutton{
+    color: black;
+    width: 18rem;
+    padding: 1.5rem;
+}
+.project img{
+    width: 30%;
+    padding-top: 2rem;
+}
+.project h3{
+    font-weight: 700;
+    font-size:4rem;
+    margin: 3rem 0;
+}
+
+/*portfolio ends here*/
+
+
+/*contact us starts here*/
+.contact{
+    padding: 7rem 0;
+}
+.contactus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box1{
+    width: 47%;
+}
+.box2{
+    width: 47%;
+}
+.box1 h2,.box2 h2{
+ font-size: 5rem ;
+ font-weight: 800;
+ margin-bottom:3rem;
+}
+.box1 input{
+    padding: 3rem  1rem;
+    font-size: 2rem;
+}
+
+.box2 p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(83, 82, 82);
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 3rem;
+}
+.box1 textarea{
+    font-size: 2rem;
+}
+.sbutton{
+    padding:2rem 5rem;
+    background-color: black;
+    color: #fff;
+}
+.sbutton:hover{
+    background-color: rgb(124, 117, 117);
+    color: black;
+    border: 0;
+    font-size: 1.5rem;
+}
+/*contact  ends here*/
+
+
+
+.last-width{
+    background-color:rgb(54, 51, 51);
+    padding: 4rem 0;
+    color: #fff;
+}
+.hindi{
+    width: 25%;
+}
+.hindi h3{
+   font-size: 5rem;
+   font-weight: 700;
+}
+.inpu{
+    width: 55%;
+}
+.upper .subs{
+    width: 20%;
+    color: rgb(23, 22, 22);
+}
+
+.inpu input, .subs input{
+    padding: 3rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+.subs:hover{
+
+}
+.upper{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.news,.us,.usefull{
+    width: 25%;
+    
+}
+.usefull ul ,.us ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 2rem;
+}
+.usefull ul li a,.us ul li a{
+    color: #fff;
+    font-size: 2rem;
+    text-align: left;
+     line-height: 4rem;    
+}
+.us ul li {
+    font-size: 2rem;
+    line-height: 4rem;    
+
+}
+.news p{
+    font-size: 2rem;
+    line-height: 4rem;
+}
+ 
+.footer{
+    background-color: black;
+    margin-bottom: 0;
+    padding: 2rem 0;
+
+}
+
+.footer p{
+    color: #fff;
+    font-size: 2rem;
+
+}
+
+@media only screen and (max-width:1000px) and (min-width:768px){
+
+    #my-navigation ul li a{
+        color: #fff;
+        font-size: 1.8rem;
+        padding-right: 1rem;
+    }
+    .full-width{
+        width: 100%;
+    }
+    .banner {
+        width: 120%;
+    }
+    .banner h1{
+        font-size: 8rem;
+    }
+    .button {
+     width: 150px;
+    }
+    .hindi h3{
+        font-size: 3rem;
+    }
+
+    .news{
+        width: 28%;
+    }
+    .us,.usefull{
+        width: 22%;
+        
+    }
+    .news h3{
+    font-size: 2.1rem;
+    }
+    .news p{
+      font-size: 1.9rem;
+    }
+    .us h3,.usefull h3{
+        font-size:2.1rem;
+    }
+    .usefull li a ,.us li a{
+        font-size: 1.9rem;
+        
+    }
+    .middle{
+        padding-top: 3rem;
+    }
+    .footer p{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:767px){
+    #my-navigation ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    #my-navigation ul li a{
+        color: #fff;
+        font-size: 1.5rem;
+        padding-right: 1rem;
+        
+    }
+    .banner {
+        width: 120%;
+    }
+    .banner h1{
+        font-size: 6rem;
+    }
+    .button{
+        width: 140px;
+    }
+    .first{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .info h2{
+        font-size: 4rem;
+    }
+    .info p{
+        font-size: 1.9rem;
+    }
+    .newport h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .port1, .port2, .port3,.port4{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+    .choose h2{
+        text-align: center;
+        font-size: 5rem;
+    }
+    .project{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .project img{
+        width: 30%;
+    }
+    .project h3{
+        font-size: 3rem;
+    }
+    .box1, .box2{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .box1{
+        margin-bottom: 3rem;
+    }
+    .box1 h2,.box2 h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .hindi h3{
+        font-size: 3rem;
+    }
+    .inpu, .subs{
+        padding: 2rem 2rem;
+    }
+    .subs{
+        padding: 2rem 1rem;
+
+    }
+    .usefull,.news,.us{
+        width: 50%;
+    }
+    .middle{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer p{
+        text-align: center;
+        font-size: 2rem;
+    }
 }
 
