@@ -176,6 +176,7 @@ h2 hr{
     background-image: url(../images/prot1.png);
 }
 
+
 .port2{
     width: 47%;
     height:50vh;
@@ -240,6 +241,7 @@ h2 hr{
     font-family: 'Poppins', sans-serif;
 
 }
+
 .choose h2{
     font-size: 5rem;
     font-weight: 800;
@@ -364,6 +366,10 @@ h2 hr{
 .news,.us,.usefull{
     width: 25%;
     
+    
+}
+.news h3,.us h3,.usefull h3{
+    color: palevioletred;
 }
 .usefull ul ,.us ul{
     list-style-type: none;
@@ -451,7 +457,7 @@ h2 hr{
     }
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:767px) and (min-width:480px) {
     #my-navigation ul{
         display: flex;
         flex-wrap: wrap;
@@ -543,3 +549,16 @@ h2 hr{
     }
 }
 
+
+@media only screen and (max-width:500px) and (min-width:0px){
+.usefull,.news,.us{
+    width: 100%;
+    text-align: center;
+}
+.middle{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+}
