@@ -457,7 +457,7 @@ h2 hr{
     }
 }
 
-@media only screen and (max-width:767px) and (min-width:480px) {
+@media only screen and (max-width:767px) and (min-width:0px) {
     #my-navigation ul{
         display: flex;
         flex-wrap: wrap;
@@ -550,7 +550,7 @@ h2 hr{
 }
 
 
-@media only screen and (max-width:500px) and (min-width:0px){
+@media only screen and (max-width:600px) and (min-width:0px){
 .usefull,.news,.us{
     width: 100%;
     text-align: center;
